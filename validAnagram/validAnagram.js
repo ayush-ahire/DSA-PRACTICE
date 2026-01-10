@@ -10,9 +10,11 @@ function validAnagram(str1, str2) {
   }, {});
   console.log(frequencyCount2);
 
-  return Object.keys(frequencyCount1).every((char) => frequencyCount1[char] === frequencyCount2[char]);
+  return Object.keys(frequencyCount1).every(
+    (char) => frequencyCount1[char] === frequencyCount2[char]
+  );
 }
 
-let str1 = "a";
-let str2 = "ab";
+let str1 = "jam";
+let str2 = "jar";
 console.log(validAnagram(str1, str2));
